@@ -2,7 +2,7 @@
 Identify  advertisements in game dialogue  using Natural Language Processing and Deep Learning.
 
 ## Task description
-Resource advertisements seriously affect the player's experience. In this task, I am asked to identify whether a text is an advertisemnet or not.
+Resource advertisements seriously affect the player's experience. In this task, I am asked to identify whether a text is an advertisement or not.
 
 ### Dataset
 This is a supervised learning task, with labeled data in the following format:
@@ -19,7 +19,7 @@ label	text
 ### Data cleaning
 I adopt rule based data cleaning methods:
 1. Noting that advertisements usually contain contact methods like QQ/WeChat/Phone number for follow-up communication.
-2. Exrtact frequently used words in sentences contains advertisements in training set.
+2. Exrtact frequently used words in sentences containing advertisements in training set.
 
 ### Model selection
 I fine tune the Bert (bert-base-chinese) model to do the identification task, considering its strong semantic understanding ability, and the accuracy in validation sets turns out good.
